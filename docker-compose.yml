@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: php_https
+    restart: always
+    ports:
+      - "8080:80"   # HTTP se expone en el puerto 8080
+      - "3000:3000" # HTTPS se expone en el puerto 3000
+    volumes:
+      - ./html:/var/www/html
+      - ./apache/apache-config.conf:/etc/apache2/sites-available/000-default.conf
+      - ./server.crt:/etc/ssl/certs/server.crt
+      - ./server.key:/etc/ssl/private/server.key
