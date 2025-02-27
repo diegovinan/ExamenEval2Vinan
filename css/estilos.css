@@ -1,0 +1,122 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Encabezados de la tabla */
+th {
+    background: #333;
+    color: white;
+    padding: 12px;
+}
+
+/* Celdas de la tabla */
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Imágenes dentro de la tabla */
+img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Alternar colores de filas */
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Resaltar filas al pasar el ratón */
+tr:hover {
+    background: #eaeaea;
+}
+
+/* Estilos de concentración de polen */
+.alto {
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.medio {
+    background: orange;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.bajo {
+    background: green;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nada {
+    background: grey !important; /* Asegurar que se aplique el color */
+    color: white !important;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* Responsividad para móviles */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    img {
+        width: 40px;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+}
+
+#batman-img {
+    width: 50px;  /* Ajusta el tamaño según necesites */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor del título con la imagen */
+#titulo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
